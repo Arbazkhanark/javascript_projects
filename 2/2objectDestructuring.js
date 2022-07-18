@@ -1,5 +1,5 @@
 'use strict'
-console.log('-----OBJECT-------');
+console.log('----------------------OBJECT-----------------------------------');
 const restaurant={
     name:'Ark',
     location:'Delhi , Alwar',
@@ -25,20 +25,22 @@ const restaurant={
         return this.starterMenu[starterIndex],this.mainMenu[mainIndex];
     },
 
-    orderDelivery:function(){
-        
+    //We make this function who has object parameters that's it is  inside of curly bracec.
+    orderDelivery:function({starterIndex=1,mainIndex=0,address,timing='20:00'}){
+        console.log( `Order Received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be Delivered to ${address} at ${timing}`);
 
-    }
+    },
 
 
 };
+
 
 const { name,openingHours,categories}=restaurant;
 console.log('Name: ',name,'Timing: ',openingHours,'categories: ',categories);
 
 
 //change variable name
-console.log('-------------changing variable names--------------');
+console.log('---------------------------------changing variable names---------------------------------------');
 const {
     name:restaurantName,
     openingHours:timing,
@@ -48,7 +50,7 @@ console.log(restaurantName,timing,tags);
 
 
 //Mutating variables
-console.log('----------Mutating varibles in Object---------');
+console.log('----------------------------Mutating varibles in Object-------------------------------');
 let num1=100;
 let num2=82;
 console.log('Before:-- Num1: ',num1,'num2: ',num2);
@@ -73,3 +75,26 @@ const {
     thu:{open:o , close:cl},
 } = openingHours;
 console.log('Thursday:-- open:', o,'close: ',cl);
+
+
+
+//obj function call
+console.log('-----------------Function/Method Object-----------------');
+restaurant.orderDelivery({
+    timing:'22:10',
+    address:'D-7/21 Opp Uttam Nagar Terminal New Delhi',
+    mainIndex:1,
+    starterIndex:0
+});
+
+restaurant.orderDelivery({
+    address:'g-8/43 Janak puri disctt center',
+    starterIndex:3,
+});
+
+restaurant.orderDelivery({
+    timing:'19:30',
+    starterIndex:2,
+    mainIndex:0,
+    address:'a-43/b0 Jeewan Park JanakPuri'
+});
