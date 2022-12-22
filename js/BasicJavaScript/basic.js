@@ -264,9 +264,105 @@ console.log("----------------------- Section 5 ------------------------");
 // If used postfix, with operator after operand (for example, x++), 
 // the increment operator increments and returns the value before incrementing.
 
+    var num=3;
+    var n=--num+1;
+    console.log(n);         //3
+    console.log(num);       //2
+    
+    var k=0;
+    var l=k++;
+    console.log(k);         //1
+    console.log(l);         //0
+    ++k;
+    console.log(k);         //2
 
 
 
+
+//     3️⃣Comparison operators
+// A comparison operator compares its operands and 
+// returns a logical value based on whether the comparison is true.
+
+var a = 30;
+var b = 10;
+
+// Equal (==)
+console.log(a == b);              //false
+
+// Not equal (!=)
+console.log(a != b);               //true
+
+// Greater than (>)
+console.log(a > b);                  //true
+
+// Greater than or equal (>=)
+console.log(a >= b);                //true
+
+// Less than (<)
+console.log(a < b);                 //false
+
+// Less than or equal (<=)
+console.log(a <= b);                //false
+
+
+
+
+
+
+
+console.log("-------------------------- Logical Operators -----------------------------------");
+// 4️⃣ Logical operators
+// Logical operators are typically used with Boolean (logical) values; 
+// when they are, they return a Boolean value.
+
+var a = 30;
+var b = -20;
+
+// Logical AND (&&)
+// The logical AND (&&) operator (logical conjunction) for a set of 
+// operands is true if and only if all of its operands are true.
+
+
+console.log(a > b && b > -50 && b < 0);        //true
+
+
+// Logical OR (||)
+// The logical OR (||) operator (logical disjunction) for a set of 
+// operands is true if and only if one or more of its operands is true.
+
+console.log((a < b) || (b > 0) || (b > 0));    //false
+
+// Logical NOT (!)
+// The logical NOT (!) operator (logical complement, negation) 
+// takes truth to falsity and vice versa.
+
+console.log(!((a>0) || (b<0)));                //false
+console.log(!true);                            //false
+
+
+
+
+
+
+
+console.log("---------------------- String Concatenation--------------------------");
+// 5️⃣ String Concatenation(operators)
+// The concatenation operator (+) concatenates two string values together, 
+// returning another string that is the union of the two operand strings.
+
+
+console.log("Hello World");         //Hello World
+
+console.log("hello " +  "world");   //hello world
+
+var myName = "Arbazzz";
+
+console.log(myName + " khaaaan");          //Arbazzz khaaaan
+console.log(myName + " Arkk");             //Arbazzz Arkk
+console.log(myName + " Uchiha Itachi");     //Arbazzz Uchiha Itachi
 }
+
+
+
 
 
