@@ -4,3 +4,5 @@
 2.Each Project has Project number so we can identify the project and check the output of that project after uncomment them.
 
 3.In folder 2,there is two files of Destructuring with array and objects. 
+
+4. Basic javaScript
